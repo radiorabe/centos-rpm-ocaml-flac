@@ -38,6 +38,13 @@ make install
 /usr/lib64/ocaml/flac/flac.cmi
 /usr/lib64/ocaml/flac/flac.cmxa
 /usr/lib64/ocaml/flac/flac.mli
+/usr/lib64/ocaml/flac/flac.cmx
+/usr/lib64/ocaml/flac/ogg_demuxer_flac_decoder.cmi
+/usr/lib64/ocaml/flac/ogg_demuxer_flac_decoder.cmx
+/usr/lib64/ocaml/flac/ogg_demuxer_flac_decoder.mli
+/usr/lib64/ocaml/flac/ogg_flac.cmi
+/usr/lib64/ocaml/flac/ogg_flac.cmx
+/usr/lib64/ocaml/flac/ogg_flac.mli
 /usr/lib64/ocaml/flac/libflac_stubs.a
 /usr/lib64/ocaml/stublibs/dllflac_stubs.so
 /usr/lib64/ocaml/stublibs/dllflac_stubs.so.owner

@@ -9,6 +9,7 @@ Source0:  https://github.com/savonet/ocaml-flac/releases/download/%{version}/oca
 
 BuildRequires: ocaml
 BuildRequires: ocaml-findlib
+BuildRequires: ocaml-ogg
 BuildRequires: flac-devel
 Requires:      flac
 

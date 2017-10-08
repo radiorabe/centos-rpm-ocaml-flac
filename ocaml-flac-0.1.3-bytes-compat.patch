@@ -1,0 +1,22 @@
+--- src/flac.ml-orig	2017-10-08 13:34:39.466498739 +0000
++++ src/flac.ml	2017-10-08 13:36:50.966462446 +0000
+@@ -228,7 +228,7 @@
+ 
+   type 'a priv
+ 
+-  type write = bytes -> unit
++  type write = Bytes.t -> unit
+ 
+   type 'a callbacks = 
+     { 
+--- src/flac.mli-orig	2017-10-08 13:34:49.447571886 +0000
++++ src/flac.mli	2017-10-08 13:36:27.053287196 +0000
+@@ -296,7 +296,7 @@
+   type 'a t
+ 
+   (** Type of a write callback *)
+-  type write = bytes -> unit
++  type write = Bytes.t -> unit
+ 
+   (** Type of a set of callbacks *)
+   type 'a callbacks

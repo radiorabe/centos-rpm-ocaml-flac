@@ -1,11 +1,12 @@
 Name:     ocaml-flac
 
-Version:  0.1.2
+Version:  0.1.3
 Release:  1
 Summary:  OCaml bindings for flac
 License:  GPLv2+
 URL:      https://github.com/savonet/ocaml-flac
 Source0:  https://github.com/savonet/ocaml-flac/releases/download/%{version}/ocaml-flac-%{version}.tar.gz
+Patch0:   ocaml-flac-0.1.3-bytes-compat.patch
 
 BuildRequires: ocaml
 BuildRequires: ocaml-findlib
@@ -15,6 +16,7 @@ Requires:      flac
 
 %prep
 %setup -q 
+%patch0
 
 %build
 ./configure \
@@ -54,5 +56,8 @@ OCAML bindings for flac
 
 
 %changelog
+* Sun Oct  8 2016 Lucas Bickel <hairmare@rabe.ch>
+- Version bump
+
 * Sun Jul  3 2016 Lucas Bickel <hairmare@rabe.ch>
 - initial version, mostly stolen from https://www.openmamba.org/showfile.html?file=/pub/openmamba/devel/specs/ocaml-flac.spec

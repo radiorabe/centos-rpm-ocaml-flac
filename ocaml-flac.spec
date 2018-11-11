@@ -1,7 +1,9 @@
+%define debug_package %{nil}
+
 Name:     ocaml-flac
 
 Version:  0.1.3
-Release:  2%{?dist}
+Release:  3%{?dist}
 Summary:  OCaml bindings for flac
 License:  GPLv2+
 URL:      https://github.com/savonet/ocaml-flac
@@ -53,3 +55,6 @@ make install
 /usr/lib64/ocaml/stublibs/dllflac_stubs.so
 /usr/lib64/ocaml/stublibs/dllflac_stubs.so.owner
 
+%changelog
+* Sun Nov 11 2018 Lucas Bickel <hairmare@rabe.ch> - 0.1.3-3
+- Fix Fedora build by disabling debug package

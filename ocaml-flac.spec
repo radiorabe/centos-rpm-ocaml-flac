@@ -1,8 +1,8 @@
 %define debug_package %{nil}
 
 Name:     ocaml-flac
-Version:  0.1.3
-Release:  4%{?dist}
+Version:  0.1.4
+Release:  0.1%{?dist}
 Summary:  OCaml bindings for flac
 
 %global libname %(echo %{name} | sed -e 's/^ocaml-//')
@@ -73,6 +73,9 @@ make install
 %endif
 
 %changelog
+* Thu Jan 24 2019 Lucas Bickel <hairmare@rabe.ch> - 0.1.4-0.1
+- Bump to 0.1.4
+
 * Sun Dec  9 2018 Lucas Bickel <hairmare@rabe.ch> - 0.1.3-4
 - Cleanup and add separate -devel subpackage
 

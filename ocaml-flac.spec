@@ -1,18 +1,18 @@
 %define debug_package %{nil}
 
 Name:     ocaml-flac
-Version:  0.1.5
-Release:  0.0%{?dist}
+Version:  0.1.7
+Release:  0.1%{?dist}
 Summary:  OCaml bindings for flac
 
 %global libname %(echo %{name} | sed -e 's/^ocaml-//')
 
 License:  GPLv2+
 URL:      https://github.com/savonet/ocaml-flac
-Source0:  https://github.com/savonet/ocaml-flac/releases/download/%{version}/ocaml-flac-%{version}.tar.gz
+Source0:  https://github.com/savonet/ocaml-flac/releases/download/v%{version}/ocaml-flac-%{version}.tar.gz
 
 BuildRequires: ocaml
-BuildRequires: ocaml-findlib-devel
+BuildRequires: ocaml-findlib
 BuildRequires: ocaml-ogg-devel
 BuildRequires: flac-devel
 Requires:      flac
@@ -73,6 +73,9 @@ make install
 %endif
 
 %changelog
+* Thu Dec 3 2020 Lucas Bickel <hairmare@rabe.ch> - 0.1.7-0.1
+- Bump to 0.1.7
+
 * Sat Aug  3 2019 Lucas Bickel <hairmare@rabe.ch> - 0.1.5-0.0
 - Bump to 0.1.5
 
